@@ -1,0 +1,1 @@
+--nodebug -i "p7" --prj "G:\STUDY\testsuits\p7\testsuit\\tmp\__mips_tb_beh.prj" -o "G:\STUDY\testsuits\p7\testsuit\\tmp\mips_tb_beh.exe" "__mips_tb" 

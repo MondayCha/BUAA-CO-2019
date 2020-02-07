@@ -1,0 +1,9 @@
+WARNING:HDLCompiler:1016 - "G:\STUDY\testsuits\p7\testsuit\\__mips_tb.v" Line 7: Port interrupt is not connected to this instance
+WARNING:HDLCompiler:1016 - "G:\STUDY\testsuits\p7\testsuit\p7\cpu.v" Line 308: Port ALUOp is not connected to this instance
+WARNING:HDLCompiler:1016 - "G:\STUDY\testsuits\p7\testsuit\p7\cpu.v" Line 326: Port Newjudge_D is not connected to this instance
+WARNING:HDLCompiler:1016 - "G:\STUDY\testsuits\p7\testsuit\p7\cpu.v" Line 408: Port MemRead is not connected to this instance
+WARNING:HDLCompiler:1016 - "G:\STUDY\testsuits\p7\testsuit\p7\cpu.v" Line 421: Port Newjudge_E is not connected to this instance
+WARNING:HDLCompiler:1016 - "G:\STUDY\testsuits\p7\testsuit\p7\cpu.v" Line 501: Port ALUOp is not connected to this instance
+WARNING:HDLCompiler:1016 - "G:\STUDY\testsuits\p7\testsuit\p7\cpu.v" Line 513: Port Newjudge_M is not connected to this instance
+WARNING:HDLCompiler:1016 - "G:\STUDY\testsuits\p7\testsuit\p7\cpu.v" Line 555: Port ALUOp is not connected to this instance
+^C

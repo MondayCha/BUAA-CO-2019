@@ -1,0 +1,8 @@
+Exception at PC 0x00000001800F66CD
+Attemped to read address 0x0000000000000000
+Printing stacktrace...
+
+[0] (xsi_xilinx_lic_check+0x192d) [0x0x00000001800f66cd]
+[1] (xsi_xilinx_lic_check+0x192d) [0x0x00000001800f66cd]
+[2]  [0x0x000000000040213c]
+Done

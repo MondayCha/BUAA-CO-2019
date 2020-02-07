@@ -1,0 +1,64 @@
+Running: E:\ProgramData\ISE\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe --nodebug -i p7 --prj G:\STUDY\testsuits\p7\testsuit\\tmp\__mips_tb_beh.prj -o G:\STUDY\testsuits\p7\testsuit\\tmp\mips_tb_beh.exe __mips_tb 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "G:\STUDY\testsuits\p7\testsuit\\__mips_tb.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p7\testsuit\p7\alu.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p7\testsuit\p7\bridge.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p7\testsuit\p7\cmp.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p7\testsuit\p7\compiler.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p7\testsuit\p7\controller.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p7\testsuit\p7\cp0.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p7\testsuit\p7\cpu.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p7\testsuit\p7\dm.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p7\testsuit\p7\dmb.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p7\testsuit\p7\EXMEM.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p7\testsuit\p7\ext.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p7\testsuit\p7\grf.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p7\testsuit\p7\hazard.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p7\testsuit\p7\IDEX.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p7\testsuit\p7\IFID.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p7\testsuit\p7\im.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p7\testsuit\p7\macrodefine.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p7\testsuit\p7\mdu.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p7\testsuit\p7\MEMWB.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p7\testsuit\p7\mf.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p7\testsuit\p7\mips.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p7\testsuit\p7\mux.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p7\testsuit\p7\npc.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p7\testsuit\p7\pc.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p7\testsuit\p7\timecal.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p7\testsuit\p7\timer.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module pc
+Compiling module im
+Compiling module compiler
+Compiling module IFID
+Compiling module grf
+Compiling module cmp
+Compiling module npc
+Compiling module ext
+Compiling module controller
+Compiling module timecal
+Compiling module IDEX
+Compiling module alu
+Compiling module mux_2_32
+Compiling module mdu
+Compiling module mf
+Compiling module EXMEM
+Compiling module dm
+Compiling module cp0
+Compiling module MEMWB
+Compiling module dmb
+Compiling module mux_3_5
+Compiling module mux_5_32
+Compiling module hazard
+Compiling module cpu
+Compiling module bridge
+Compiling module timer
+Compiling module mips
+Compiling module __mips_tb
+Time Resolution for simulation is 1ps.
+Waiting for 13 sub-compilation(s) to finish...

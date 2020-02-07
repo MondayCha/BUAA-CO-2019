@@ -1,0 +1,6 @@
+Running: E:\ProgramData\ISE\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe --nodebug -i p5 --prj G:\STUDY\testsuits\p5\testsuit\\tmp\__mips_tb_beh.prj -o G:\STUDY\testsuits\p5\testsuit\\tmp\mips_tb_beh.exe __mips_tb 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+ERROR:HDLCompiler:0 - "Unknown" Line 0: cannot open verilog file G:\STUDY\testsuits\p5\testsuit\\__mips_tb.v

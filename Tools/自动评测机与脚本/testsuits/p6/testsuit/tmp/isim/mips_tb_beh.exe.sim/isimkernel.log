@@ -1,0 +1,29 @@
+Command line:
+   mips_tb_beh.exe
+     -intstyle  silent
+     -simmode  tcl
+     -simrunnum  0
+     -socket  6947
+
+Thu Dec 12 12:14:31 2019
+
+
+ Elaboration Time: 0.328125 sec
+
+ Current Memory Usage: 5968.75 Meg
+
+ Total Signals          : 610
+ Total Nets             : 2866
+ Total Signal Drivers   : 415
+ Total Blocks           : 31
+ Total Primitive Blocks : 28
+ Total Processes        : 441
+ Total Traceable Variables  : 56
+ Total Scalar Nets and Variables : 267309
+
+ Total Simulation Time: 0.390625 sec
+
+ Current Memory Usage: 5968.75 Meg
+
+Thu Dec 12 12:14:32 2019
+

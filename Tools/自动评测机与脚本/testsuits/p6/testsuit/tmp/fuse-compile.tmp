@@ -1,0 +1,8 @@
+WARNING:HDLCompiler:1016 - "G:\STUDY\testsuits\p6\testsuit\p6\mips.v" Line 244: Port ALUOp is not connected to this instance
+WARNING:HDLCompiler:1016 - "G:\STUDY\testsuits\p6\testsuit\p6\mips.v" Line 262: Port Newjudge_D is not connected to this instance
+WARNING:HDLCompiler:1016 - "G:\STUDY\testsuits\p6\testsuit\p6\mips.v" Line 334: Port MemRead is not connected to this instance
+WARNING:HDLCompiler:1016 - "G:\STUDY\testsuits\p6\testsuit\p6\mips.v" Line 347: Port Newjudge_E is not connected to this instance
+WARNING:HDLCompiler:1016 - "G:\STUDY\testsuits\p6\testsuit\p6\mips.v" Line 389: Port ALUOp is not connected to this instance
+WARNING:HDLCompiler:1016 - "G:\STUDY\testsuits\p6\testsuit\p6\mips.v" Line 400: Port Newjudge_M is not connected to this instance
+WARNING:HDLCompiler:1016 - "G:\STUDY\testsuits\p6\testsuit\p6\mips.v" Line 434: Port ALUOp is not connected to this instance
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: 系统找不到指定的路径。, "isim\mips_tb_beh.exe.sim\libPortability.dll".

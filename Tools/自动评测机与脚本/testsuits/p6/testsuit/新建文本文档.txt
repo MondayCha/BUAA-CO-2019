@@ -1,0 +1,3 @@
+judge.bat p6 2.asm
+
+fc ans-pre.txt out-pre.txt

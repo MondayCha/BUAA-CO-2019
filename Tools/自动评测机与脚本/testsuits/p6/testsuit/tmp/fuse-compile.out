@@ -1,0 +1,59 @@
+Running: E:\ProgramData\ISE\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe --nodebug -i p6 --prj G:\STUDY\testsuits\p6\testsuit\\tmp\__mips_tb_beh.prj -o G:\STUDY\testsuits\p6\testsuit\\tmp\mips_tb_beh.exe __mips_tb 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "G:\STUDY\testsuits\p6\testsuit\\__mips_tb.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p6\testsuit\p6\alu.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p6\testsuit\p6\cmp.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p6\testsuit\p6\controller.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p6\testsuit\p6\dm.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p6\testsuit\p6\dmb.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p6\testsuit\p6\EXMEM.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p6\testsuit\p6\ext.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p6\testsuit\p6\grf.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p6\testsuit\p6\hazard.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p6\testsuit\p6\IDEX.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p6\testsuit\p6\IFID.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p6\testsuit\p6\im.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p6\testsuit\p6\macrodefine.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p6\testsuit\p6\mdu.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p6\testsuit\p6\MEMWB.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p6\testsuit\p6\mf.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p6\testsuit\p6\mips.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p6\testsuit\p6\mux.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p6\testsuit\p6\npc.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p6\testsuit\p6\pc.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p6\testsuit\p6\tb.v" into library work
+Analyzing Verilog file "G:\STUDY\testsuits\p6\testsuit\p6\timecal.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module pc
+Compiling module im
+Compiling module IFID
+Compiling module grf
+Compiling module cmp
+Compiling module npc
+Compiling module ext
+Compiling module controller
+Compiling module timecal
+Compiling module IDEX
+Compiling module alu
+Compiling module mux_2_32
+Compiling module mdu
+Compiling module mf
+Compiling module EXMEM
+Compiling module dm
+Compiling module MEMWB
+Compiling module dmb
+Compiling module mux_3_5
+Compiling module mux_4_32
+Compiling module hazard
+Compiling module mips
+Compiling module __mips_tb
+Time Resolution for simulation is 1ps.
+Waiting for 8 sub-compilation(s) to finish...
+Compiled 23 Verilog Units
+Built simulation executable G:\STUDY\testsuits\p6\testsuit\\tmp\mips_tb_beh.exe
+Fuse Memory Usage: 33940 KB
+Fuse CPU Usage: 749 ms
