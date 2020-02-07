@@ -41,7 +41,7 @@ module bridge(
 	
 	assign DEV_WD = PrWD;
 	
-	assign dev0_hit = (addr32 == 32'h00007f00 | addr32 == 32'h00007f04 | addr32 == 32'h00007f08); // Count是不能写的……
+	assign dev0_hit = (addr32 == 32'h00007f00 | addr32 == 32'h00007f04 | addr32 == 32'h00007f08);
 	assign dev1_hit = (addr32 == 32'h00007f10 | addr32 == 32'h00007f14 | addr32 == 32'h00007f18);
 	
 	assign DEV0_WE = dev0_hit & PrWe;
@@ -49,6 +49,6 @@ module bridge(
 	
 	assign PrRD = 	dev0_hit ? DEV0_RD :
 						dev1_hit ? DEV1_RD :
-						32'h18373580;
+						32'h23333333;
 
 endmodule

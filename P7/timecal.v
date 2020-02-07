@@ -420,7 +420,7 @@
 								Tuse_rs 	<= 3'd0;
 								Tuse_rt 	<= 3'd0;
 								Tnew 		<= 3'd0;
-						  end //nopÓëunknown
+						  end
 		endcase
 	end
 	

@@ -61,7 +61,6 @@ module mips(
 		 );
 	assign cpu_i_PrRD = bridge_PrRD;
 	assign cpu_i_HWInt = {3'b0, interrupt, timer1_IRQ, timer0_IRQ};
-	// Timer0输出的中断请求信号接入HWInt[2] (最低中断位)，Timer1输出的中断请求信号接入HWInt[3]，来自MIPS微系统外部的中断请求信号接入HWInt[4]
 
 	bridge BRIDGE (
 		 .PrAddr(cpu_o_PrAddr), 

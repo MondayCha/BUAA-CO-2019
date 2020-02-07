@@ -196,6 +196,7 @@ module cpu(
 	
 	// CP0
 	wire cp0_reset;
+	wire [31:0] cp0_i_Instr_M;
 	wire [4:0] cp0_i_A1;
 	wire [4:0] cp0_i_A2;
 	wire [31:0] cp0_i_DIn;
@@ -209,7 +210,6 @@ module cpu(
 	wire cp0_i_delayslot;
 	/*******************/
 	wire cp0_IntReq;
-	wire [5:0] cp0_SR_IM;
 	wire [31:0] cp0_EPC;
 	wire [31:0] cp0_DOut;
 	
@@ -221,7 +221,7 @@ module cpu(
 		 .o_PC(pc_o_PC_32),
 		 .ExcCode_F(ExcCode_F)
 		 );
-	assign pc_i_en = pc_en | cp0_IntReq;	// 暂停时PC依然可以更新
+	assign pc_i_en = pc_en | cp0_IntReq;
 	assign pc_i_nextPC_32 = npc_o_nextPC_32;
 
 	im F_IM (
@@ -294,7 +294,7 @@ module cpu(
 	assign npc_i_branch_4 = con_o_Branch_4;
 	assign npc_i_imm_26 = Instr_D[`i_imm26];
 	assign npc_i_jr_addr_32 = MF_rs_D;
-	assign npc_i_eret_addr_32 = MF_eret;
+	assign npc_i_eret_addr_32 = MF_eret; //unsolved
 	assign npc_i_PC_32 = pc_o_PC_32;
 	assign npc_i_PC4D_32 = PC4_D;
 
@@ -328,7 +328,7 @@ module cpu(
 		 .clk(clk), 
 		 .reset(E_reset), 
 		 .i_en({1'b1}),
-		 .overflow(alu_o_overflow),
+		 .overflow(alu_o_overflow), // unsolved
 		 .Instr_D(Instr_D), 
 		 .PC_D(PC_D), 
 		 .PC4_D(PC4_D), 
@@ -470,7 +470,8 @@ module cpu(
 	
 	cp0 CP0 (
 		 .reset(cp0_reset), 
-		 .clk(clk),
+		 .clk(clk), 
+		 .Instr_M(cp0_i_Instr_M), 
 		 .A1(cp0_i_A1), 
 		 .A2(cp0_i_A2), 
 		 .DIn(cp0_i_DIn), 
@@ -482,20 +483,20 @@ module cpu(
 		 .EXLClr(cp0_i_EXLClr), 
 		 .delayslot(cp0_i_delayslot),
 		 .IntReq(cp0_IntReq), 
-		 .SR_IM(cp0_SR_IM),
 		 .EPC(cp0_EPC), 
 		 .DOut(cp0_DOut)
 		 );
 	assign cp0_reset = reset;
+	assign cp0_i_Instr_M = Instr_M;
 	assign cp0_i_A1 = Instr_M[`i_rd];
 	assign cp0_i_A2 = Instr_M[`i_rd];
 	assign cp0_i_DIn = MF_rt_M;
 	assign cp0_i_PC = PC_M;
-	assign cp0_i_ExcCode = 	(|(HWInt & cp0_SR_IM)) ? `Int :
+	assign cp0_i_ExcCode = 	(|HWInt) ? `Int :
 									(ExcCode_Mout == `Int) ? ExcCode_M : 
 									ExcCode_Mout;
 	assign cp0_i_HWInt = HWInt;
-	assign cp0_i_We = con_o_CP0Write & (!cp0_IntReq);
+	assign cp0_i_We = con_o_CP0Write;
 	assign cp0_i_EXLSet = cp0_IntReq;
 	assign cp0_i_EXLClr = (Instr_W == `i_eret);
 	assign cp0_i_delayslot = (Delayslot_M);

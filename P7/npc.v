@@ -35,7 +35,7 @@ module npc(
 	
 	always @(*) begin
 		if(interrupt) begin
-			o_nextPC <= 32'h00004180;	//Òì³£Èë¿Ú
+			o_nextPC <= 32'h00004180;
 		end
 		else begin
 			case (i_branch)
